@@ -1,0 +1,38 @@
+{
+
+    "header": {
+
+        "Home": "Home",
+        "Tienda": "Store",
+        "Nosotros": "About us",
+        "Idioma": "Language",
+        "Login": "Login",
+        "Perfil": "Profile",
+        "Tema": "Change theming"
+    },
+
+
+    "Login": {
+
+        "Email": "Email",
+        "Contraseña": "Password",
+        "Entrar": "Enter",
+        "Salir": "Logout"
+       
+    },
+
+    "Register": {
+
+        "Club": "Club Name",
+        "Persona": "Contact Person",
+        "Telefono": "Phone Number",
+        "Usuario": "User",
+        "Email": "Email",
+        "Contraseña": "Password",
+        "Enviar": "Send"
+       
+    }
+
+}
+
+

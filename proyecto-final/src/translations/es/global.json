@@ -1,0 +1,27 @@
+{
+    "header": {
+        "Home": "Home",
+        "Tienda": "Tienda",
+        "Nosotros": "Nosotros",
+        "Idioma": "Idioma",
+        "Login": "Registro",
+        "Perfil": "Perfil",
+        "Tema": "Cambiar Tema"
+    },
+    "Login": {
+        "Email": "Correo electrónico",
+        "Contraseña": "Contraseña",
+        "Entrar": "Entrar",
+        "Salir": "Logout"
+    },
+
+    "Register": {
+        "Club": "Nombre del Club",
+        "Persona": "Persona de contacto",
+        "Telefono": "Teléfono de contacto",
+        "Usuario": "Usuario",
+        "Email": "Email",
+        "Contraseña": "Password",
+        "Enviar": "Enviar"
+}
+}

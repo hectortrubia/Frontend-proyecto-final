@@ -1,0 +1,17 @@
+
+
+
+
+  $theme-colors: (
+  "primary":    rgb(0, 0, 0),
+  "secondary":  rgb(255, 255, 255),
+  "success":    rgb(255, 255, 255),
+  "info":       rgb(0, 0, 0),
+  "warning":    violet,
+  "danger":     orange,
+  "light":      pink,
+  "dark":       black,
+) !default;
+
+
+@import "~bootstrap/scss/bootstrap";

@@ -1,0 +1,70 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.sectioncontainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+.imagentienda {
+
+    position: relative;
+    width: 100%;
+    height:auto;
+  
+}
+
+.textotienda {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'montserrat';
+  
+}
+
+
+.titulosection {
+
+    font-size: 30px;
+    color: white
+
+}
+
+
+.subtitulosection {
+
+    font-size: 20px;
+    color: white;
+    margin-top: 0px;
+
+}
+
+.botonsection {
+
+    font-size: 10px;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+
+}
+
+

@@ -33,7 +33,7 @@ function Header() {
                             <Nav.Link as={Link} to="nosotros">{t("header.Nosotros")}</Nav.Link>
                             <Nav.Link as={Link} to="users">{t("header.Login")}</Nav.Link>
                             <Nav.Link as={Link} to="perfil">{t("header.Perfil")}</Nav.Link>
-                            <Nav.Link as={Link} to="edit">editar usuario</Nav.Link>
+                         
 {/* 
                             <Link  to="/" className="textnav">{t("header.Home")}</Link>
                             <Link  to="tienda" variant={'info'}>{t("header.Tienda")}</Link>

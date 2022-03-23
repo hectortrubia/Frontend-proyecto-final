@@ -14,7 +14,6 @@ import Users from './pages/users/users';
 import Perfil from './pages/perfil/perfil';
 import ProtectedRoute from './routes/protected-route';
 import Error from './pages/error/error';
-import Edituser from './pages/edituser/edituser';
 import Packs from './pages/packs/packs';
 
 
@@ -32,7 +31,6 @@ function App() {
           <Route path="/nosotros" element={<Contacto />}></Route>
           <Route path="/users" element={<Users/>}></Route>
           <Route path="/validate" element={<Validate/>}></Route>
-          <Route path="/edit" element={<Edituser/>}></Route>
           <Route path="/perfil" element={<ProtectedRoute><Perfil/>
             </ProtectedRoute>}></Route>
 

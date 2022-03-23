@@ -25,7 +25,7 @@ function Login() {
                 email: e.target.email.value,
                 password: e.target.password.value,
             }
-            // console.log(user)
+      
     
             fetch('http://localhost:4000/auth/login', {
                 method: 'POST',

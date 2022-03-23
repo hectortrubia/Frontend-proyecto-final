@@ -1,21 +1,57 @@
 
 import React from 'react';
-import  Container  from 'react-bootstrap/Container';
-import { useTranslation } from "react-i18next";
-import { themeContext } from "../../context/themeContext.jsx";
-import {useContext} from "react";
+import { useEffect, useState } from "react";
+import CardProduct from '../../components/cardproducto/cardproducto';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+
 
 function Packs() {
 
-    const [t, i18n] = useTranslation("global");
-    const [theme, updateTheme, changeTheme, logName, setLogName] = useContext(themeContext)
 
+    let [product, updateProduct] = useState([])
+
+    useEffect(() => {
+
+        fetch('http://localhost:4000/products')
+            .then(j => j.json())
+            .then(data => {
+                console.log(data)
+                updateProduct(data)
+            })
+    }, [])
+
+    console.log(product)
 
     return (
-        <React.Fragment>
-            <Container>Esto es la seccion packs chandals</Container>
-        </React.Fragment>
-    )
-}
 
-export default Packs;
+        <div >
+            <Container >
+                <Row>
+
+                    {product.length === 0 ? <h1>cargando</h1> : product.map((v, i) => {
+                        console.log(v)
+                        return (
+
+                            <CardProduct key={i} imagen={v.imagen} color={v.color} descripcion={v.descripcion} precio={v.precio} talla={v.talla} tipo={v.tipo}  ></CardProduct>)
+                    }
+
+                    )}
+
+                </Row>
+            </Container>
+        </div>
+
+    )
+
+}
+export default Packs
+
+
+
+
+
+
+
+
+

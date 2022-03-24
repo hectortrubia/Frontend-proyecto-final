@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import { useTranslation } from "react-i18next";
@@ -29,7 +28,7 @@ function Home() {
 
             <Row className='m-0 p-0'>
                 <Col sm={12} md={12} lg={12} xl={12} xxl={12} className='m-0 p-0'>
-                    <Image src={nidobn} className='adhome' fluid />
+                    <Image src={nidobn}  fluid />
                 </Col>
             </Row>
 

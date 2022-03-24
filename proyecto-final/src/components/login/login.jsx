@@ -7,6 +7,8 @@ import { themeContext } from "../../context/themeContext";
 import {useContext} from "react";
 import { useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './loginstyle.scss';
+
 
 
 
@@ -57,22 +59,30 @@ function Login() {
 
     return (
         <React.Fragment>
-            <Form onSubmit={handleOnSubmit}>
+
+            
+            <div className="containerlogin">
+
+            <div className="titlelogin" >Login</div>
+
+            <Form onSubmit={handleOnSubmit} className="containerform">
                 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>{t("Login.Email")}</Form.Label>
-                    <Form.Control type="email" placeholder="Email" name="email" />
+                    <Form.Control type="email" placeholder="Email" name="email" className="input"/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>{t("Login.Contraseña")}</Form.Label>
-                    <Form.Control type="password" placeholder="Password" name="password" />
+                    <Form.Control type="password" placeholder="Password" name="password" className="input" />
                 </Form.Group>
             
-                <Button variant={theme.primary} type="submit">{t("Login.Entrar")}</Button>
+                <Button type="submit" className="botonlogin">{t("Login.Entrar")}</Button>
                
 
             </Form>
+
+            </div>
        
         </React.Fragment>
     )

@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav';
@@ -12,6 +13,8 @@ import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import './headerstyle.scss';
+
 
 
 
@@ -23,7 +26,7 @@ function Header() {
     return (
         <React.Fragment>
 
-            <Navbar collapseOnSelect expand="md" bg={theme.secondary} variant='light'  style={{ height: "70px",}}>
+            <Navbar collapseOnSelect expand="md" bg={theme.primary} style={{ height: "70px"}}>
                 <Container className="p-0 m-0">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -47,14 +50,8 @@ function Header() {
                         <Nav className="p-0 m-0" fluid>
                             <Button onClick={() => i18n.changeLanguage("es")} className="me-1" >ES</Button>
                             <Button onClick={() => i18n.changeLanguage("en")} className="ms-1" >EN</Button>
-                            <Form>
-                                <Form.Check onClick={changeTheme}
-                                    type="switch"
-                                    id="custom-switch"
-                                    label="Cambio de tema"
-                                    className="ms-3"
-                                />
-                            </Form>
+                            <Button  onClick={changeTheme} className="ms-1" >Cambiar Color</Button>
+                        
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

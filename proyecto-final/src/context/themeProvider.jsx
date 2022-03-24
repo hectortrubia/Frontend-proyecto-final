@@ -3,14 +3,14 @@ import { useState } from "react";
 
 const lightTheme = {
 
-    primary: "primary",
-    secondary: "secondary"
+    primary: "lightground",
+    secondary: "lighttypo"
 }
 
 const darkTheme = {
 
-    primary: "secondary",
-    secondary: "primary"
+    primary: "darkground",
+    secondary: "darktypo"
 }
 
 

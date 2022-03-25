@@ -64,7 +64,7 @@ function Login() {
             <div className="containerlogin">
             <div className="titlelogin" > Login</div>
 
-            <Form onSubmit={handleOnSubmit} className="containerform">
+            <Form onSubmit={handleOnSubmit} className="containerform ">
                 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>{t("Login.Email")}</Form.Label>

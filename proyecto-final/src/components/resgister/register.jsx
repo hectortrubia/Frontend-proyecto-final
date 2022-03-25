@@ -44,7 +44,6 @@ function Register() {
         <React.Fragment>
 
             <div className="containerreg">
-
                 <div className="titlereg" >Crear una cuenta</div>
                 <Form onSubmit={handleOnSubmit} className="containerformreg" >
 

@@ -5,7 +5,12 @@ import { useContext } from "react";
 import { useState } from "react";
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
+import './perfilstyle.scss';
+import juvencia from './juvencia.jpg'
+import { Image } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
+import futbol from './futbol.jpg';
+import Row from 'react-bootstrap/Row';
 
 
 function Perfil() {
@@ -62,19 +67,54 @@ function Perfil() {
 
 
 
-
     return (
 
         <React.Fragment>
 
+<Row className='m-0 p-0' fluid>
 
-            <p>{user.usuario}</p>
-            <Button onClick={handleDelete}>eliminar mi usuario</Button>
-            <Button variant={theme.primary} onClick={handleLogout} type="submit">{t("Login.Salir")}</Button>
 
-            </React.Fragment>
-            )
+            <Col className='m-0 p-0'
+                sm={12}
+                md={{ span: 6, offset: 0, }}
+                lg={{ span: 6, offset: 0, }}
+                xl={{ span: 6, offset: 0, }}
+                xxl={{ span: 6, offset: 0, }} >
+                <Image src={futbol} fluid className="imagenfutbol" />
+            </Col>
+
+            <Col className='m-0 p-0'
+               sm={12}
+               md={{ span: 6, offset: 0, }}
+               lg={{ span: 6, offset: 0, }}
+               xl={{ span: 6, offset: 0, }}
+               xxl={{ span: 6, offset: 0, }}>
+
+
+            <div className="containerperfil">
+                <Image src={juvencia} className="imagen" />
+                <p>Club: {user.club}</p>
+                <p>Usuario: {user.usuario}</p>
+                <p>Persona de contacto: {user.persona}</p>
+                <p>Teléfono: {user.telefono}</p>
+                <p>Email: {user.email}</p>
+
+
+                <div className="containerbutons">
+                    <Button className='botonperfil' variant={theme.primary} onClick={handleDelete}>Eliminar mi usuario</Button>
+                    <Button className='botonperfil' variant={theme.primary} onClick={handleLogout} type="submit">{t("Login.Salir")}</Button>
+                </div>
+
+            </div>
+            </Col>
+            
+            </Row>
+
+
+
+        </React.Fragment>
+    )
 }
 
-        
-        export default Perfil;
+
+export default Perfil;

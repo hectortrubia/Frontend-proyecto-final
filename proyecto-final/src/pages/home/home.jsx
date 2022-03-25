@@ -54,7 +54,7 @@ function Home() {
                             <Card.Text className='subtitulosection'>
                                 Descubre las últimas novedades
                             </Card.Text>
-                            <Link to="/tienda"><Button className='botonsection' variant="primary" >Entrar</Button></Link>
+                            <Link to="/packs"><Button className='botonsection' variant="primary" >Entrar</Button></Link>
                         </div>
                 </Col>
 

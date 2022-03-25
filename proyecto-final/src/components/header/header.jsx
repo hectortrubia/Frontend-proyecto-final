@@ -32,7 +32,7 @@ function Header() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" fluid >
                             <Nav.Link as={Link}  to="/">{t("header.Home")} </Nav.Link>
-                            <Nav.Link as={Link} to="tienda">{t("header.Tienda")}</Nav.Link>
+                            <Nav.Link as={Link} to="packs">{t("header.Tienda")}</Nav.Link>
                             <Nav.Link as={Link} to="nosotros">{t("header.Nosotros")}</Nav.Link>
                             <Nav.Link as={Link} to="users">{t("header.Login")}</Nav.Link>
                             <Nav.Link as={Link} to="perfil">{t("header.Perfil")}</Nav.Link>

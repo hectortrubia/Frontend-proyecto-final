@@ -6,7 +6,9 @@
         "Idioma": "Idioma",
         "Login": "Registro",
         "Perfil": "Perfil",
-        "Tema": "Cambiar Tema"
+        "Tema": "Cambiar Tema",
+        "Ingles": "Inglés",
+        "Español": "Castellano"
     },
     "Login": {
         "Email": "Correo electrónico",

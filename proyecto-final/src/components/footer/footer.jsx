@@ -17,7 +17,7 @@ function Footer() {
 
     return (
         <React.Fragment>
-            <Navbar bg={theme.primary} style={{ height: "100px" }}>
+            <Navbar bg={theme.secondary} style={{ height: "100px" }}>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll" className="navbarcontainer">
                     <Container fluid>

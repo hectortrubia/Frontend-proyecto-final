@@ -1,5 +1,6 @@
 
 
+import './headerstyle.scss';
 import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav';
@@ -13,7 +14,9 @@ import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import './headerstyle.scss';
+
+
+
 
 
 
@@ -26,36 +29,29 @@ function Header() {
     return (
         <React.Fragment>
 
-            <Navbar collapseOnSelect expand="md" bg={theme.primary} style={{ height: "70px"}}>
+            <Navbar collapseOnSelect expand="md" bg={theme.secondary} style={{ height: "70px" }} className="textnav" sticky="top" variant="dark">
                 <Container className="p-0 m-0">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto" fluid >
-                            <Nav.Link as={Link}  to="/">{t("header.Home")} </Nav.Link>
-                            <Nav.Link as={Link} to="packs">{t("header.Tienda")}</Nav.Link>
-                            <Nav.Link as={Link} to="nosotros">{t("header.Nosotros")}</Nav.Link>
-                            <Nav.Link as={Link} to="users">{t("header.Login")}</Nav.Link>
-                            <Nav.Link as={Link} to="perfil">{t("header.Perfil")}</Nav.Link>
-                         
-{/* 
-                            <Link  to="/" className="textnav">{t("header.Home")}</Link>
-                            <Link  to="tienda" variant={'info'}>{t("header.Tienda")}</Link>
-                            <Link  to="nosotros" variant={theme.secondary}>{t("header.Contacto")}</Link>
-                            <Link  to="users" variant={theme.secondary}>{t("header.Login")}</Link>
-                            <Link  to="perfil" variant={theme.secondary}>perfil</Link> */}
+                        <Nav fluid >
 
-
-                        </Nav>
-                        {logName.usuario!==undefined?<p className="user">{`${logName.usuario}`}</p>: ''}
-                        <Nav className="p-0 m-0" fluid>
-                            <Button onClick={() => i18n.changeLanguage("es")} className="me-1" >ES</Button>
-                            <Button onClick={() => i18n.changeLanguage("en")} className="ms-1" >EN</Button>
-                            <Button  onClick={changeTheme} className="ms-1" >Cambiar Color</Button>
+                            <Nav.Link className="m-3 " as={Link} to="/">{t("header.Home")} </Nav.Link>
+                            <Nav.Link className="m-3 " as={Link} to="nosotros">{t("header.Nosotros")}</Nav.Link>
+                            <Nav.Link className="m-3 " as={Link} to="packs">{t("header.Tienda")}</Nav.Link>
+                            <Nav.Link className="m-3 " as={Link} to="users">{t("header.Login")}</Nav.Link>
+                            <Nav.Link className="m-3 " as={Link} to="perfil">{t("header.Perfil")}</Nav.Link>
+                    
+                                <Button onClick={() => i18n.changeLanguage("es")} className="ms-5 buttongener" >{t("header.Español")}</Button>
+                                <Button onClick={() => i18n.changeLanguage("en")} className="m-1 buttongener" >{t("header.Ingles")}</Button>
+                                <Button onClick={changeTheme} className="m-1 buttongener">{t("header.Tema")}</Button>
+                                {logName.usuario !== undefined ?  <p className="buttonuser ">{logName.usuario}</p> :''}
                         
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
 
         </React.Fragment >
     )

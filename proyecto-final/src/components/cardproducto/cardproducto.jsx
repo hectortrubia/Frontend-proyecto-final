@@ -38,7 +38,7 @@ function CardProduct(props) {
                     </Card.Text>
 
                     {/* BOTON MODAL */}
-                    <Button variant={theme.primary} onClick={() => setShow(true)}>
+                    <Button variant={theme.secondary} onClick={() => setShow(true)}>
                         Detalles
                     </Button>
                     {/* MOOOOOODAAAL */}

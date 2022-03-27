@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url("./monserrat.ttf");
+  }  
+
+
+
+#modal__idFull{
+    min-height: 100%;
+     max-width: auto;
+ }
+
+ .containerfilter{
+
+     width: 100%;
+     font-family: 'monserrat';
+     background-color: black;
+     height: 60px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+
+
+ .inputfilter{
+
+    width: 250px;
+    font-family: 'monserrat';
+    background-color: white;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+
+}
+
+.buttonfilter {
+ 
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    margin-top: 13px;
+    font-family: 'monserrat';
+   
+}
+
+
+

@@ -29,7 +29,7 @@ function Header() {
     return (
         <React.Fragment>
 
-            <Navbar collapseOnSelect expand="md" bg={theme.secondary} style={{ height: "70px" }} className="textnav" sticky="top" variant="dark">
+            <Navbar collapseOnSelect expand="md" bg={theme.secondary} style={{ height: "60px" }} className="textnav" sticky="top" variant="dark">
                 <Container className="p-0 m-0">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

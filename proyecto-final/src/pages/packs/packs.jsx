@@ -1,15 +1,18 @@
 
+
 import React from 'react';
 import { useEffect, useState } from "react";
 import CardProduct from '../../components/cardproducto/cardproducto';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import './packstyle.scss';
 
 
 function Packs() {
 
 
     let [product, updateProduct] = useState([])
+    let [pfilter, updatefilter] = useState(product)
 
     useEffect(() => {
 
@@ -18,18 +21,30 @@ function Packs() {
             .then(data => {
                 console.log(data)
                 updateProduct(data)
+                updatefilter(data)
             })
     }, [])
 
-    console.log(product)
+    const Onfilter = (e) => {
+        let arrnew = product.filter(v => v.tipo.toLowerCase().includes(e.target.value.toLowerCase()))
+        updatefilter(arrnew)
+
+    }
+
+
 
     return (
 
         <div >
-            <Container >
+            <div className="containerfilter">
+            <p className="buttonfilter ">Encuentra tu producto</p>
+                <input className="inputfilter" onChange={Onfilter} type="text" ></input>
+            </div>
+
+            <Container  >
                 <Row>
 
-                    {product.length === 0 ? <h1>cargando</h1> : product.map((v, i) => {
+                    {pfilter === 0 ? <h1>cargando</h1> : pfilter.map((v, i) => {
                         console.log(v)
                         return (
 

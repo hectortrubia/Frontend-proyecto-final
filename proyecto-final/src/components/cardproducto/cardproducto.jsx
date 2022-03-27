@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -27,15 +28,11 @@ function CardProduct(props) {
     return (
         <React.Fragment>
 
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.imagen} />
-                <Card.Body>
-                    <Card.Title>{props.descripcion}</Card.Title>
-                    <Card.Text>
-                        {props.color}
-                        {props.talla}
-                        {props.precio}
-                    </Card.Text>
+            <Card border="none" style={{ width: '18rem' }} bsPrefix='cardgeneral' >
+                
+                <Card.Img variant="top" src={props.imagen} ></Card.Img>
+                <Card.Body className="cardbody">
+                    <Card.Title className="cardbody">{props.descripcion}</Card.Title>
 
                     {/* BOTON MODAL */}
                     <Button variant={theme.secondary} onClick={() => setShow(true)}>

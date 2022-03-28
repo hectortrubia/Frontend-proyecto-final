@@ -14,6 +14,8 @@ import Perfil from './pages/perfil/perfil';
 import ProtectedRoute from './routes/protected-route';
 import Error from './pages/error/error';
 import Packs from './pages/packs/packs';
+import Privacidad from './pages/privacidad/privacidad';
+import Cookies from './pages/cookies/cookies';
 
 
 function App() {
@@ -27,10 +29,12 @@ function App() {
           <Route path="/*" element={<Error />}></Route>
           <Route path="/packs" element={<Packs />}></Route>
           <Route path="/nosotros" element={<Contacto />}></Route>
-          <Route path="/users" element={<Users/>}></Route>
-          <Route path="/validate" element={<Validate/>}></Route>
-          <Route path="/perfil" element={<ProtectedRoute><Perfil/>
-            </ProtectedRoute>}></Route>
+          <Route path="/users" element={<Users />}></Route>
+          <Route path="/validate" element={<Validate />}></Route>
+          <Route path="/perfil" element={<ProtectedRoute><Perfil />
+          </ProtectedRoute>}></Route>
+          <Route path="/privacidad" element={<Privacidad />}></Route>
+          <Route path="/cookies" element={<Cookies />}></Route>
 
         </Routes>
         <Footer></Footer>

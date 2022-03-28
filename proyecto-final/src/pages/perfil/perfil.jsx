@@ -9,7 +9,7 @@ import './perfilstyle.scss';
 import juvencia from './juvencia.jpg'
 import { Image } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
-import futbol from './futbol.jpg';
+import ciclismo from './ciclismo.jpg';
 import Row from 'react-bootstrap/Row';
 
 
@@ -80,7 +80,7 @@ function Perfil() {
                 lg={{ span: 6, offset: 0, }}
                 xl={{ span: 6, offset: 0, }}
                 xxl={{ span: 6, offset: 0, }} >
-                <Image src={futbol} fluid className="imagenfutbol" />
+                <Image src={ciclismo} fluid className="imagenfutbol" />
             </Col>
 
             <Col className='m-0 p-0'

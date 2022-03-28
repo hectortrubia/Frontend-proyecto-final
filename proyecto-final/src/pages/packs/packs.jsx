@@ -5,12 +5,16 @@ import { useEffect, useState } from "react";
 import CardProduct from '../../components/cardproducto/cardproducto';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { themeContext } from "../../context/themeContext";
 import './packstyle.scss';
 
 
 function Packs() {
 
-
+    const [theme, updateTheme, changeTheme, logName, setLogName] = useContext(themeContext)
+    const [t, i18n] = useTranslation("global");
     let [product, updateProduct] = useState([])
     let [pfilter, updatefilter] = useState(product)
 
@@ -36,19 +40,19 @@ function Packs() {
     return (
 
         <div >
-            <div className="containerfilter">
-            <p className="buttonfilter ">Encuentra tu producto</p>
+            <div className="containerfilter" bg={theme.secondary}>
+            <p className="containertext " >Encuentra tu producto</p>
                 <input className="inputfilter" onChange={Onfilter} type="text" ></input>
             </div>
 
             <Container  >
-                <Row>
+                <Row >
 
                     {pfilter === 0 ? <h1>cargando</h1> : pfilter.map((v, i) => {
                         console.log(v)
                         return (
 
-                            <CardProduct key={i} imagen={v.imagen} color={v.color} descripcion={v.descripcion} precio={v.precio} talla={v.talla} tipo={v.tipo}  ></CardProduct>)
+                            <CardProduct   key={i} imagen={v.imagen} color={v.color} descripcion={v.descripcion} precio={v.precio} talla={v.talla} tipo={v.tipo}  ></CardProduct>)
                     }
 
                     )}

@@ -4,7 +4,7 @@ import './App.scss';
 import './custom.scss';
 import Home from './pages/home/home';
 import Header from './components/header/header';
-import Contacto from './pages/contacto/contacto';
+import Contacto from './pages/nosotros/nosotros';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ThemeProvider from './context/themeProvider';
 import Footer from './components/footer/footer';

@@ -28,34 +28,34 @@ function CardProduct(props) {
     return (
         <React.Fragment>
 
-            <Card border="none" style={{ width: '18rem' }} bsPrefix='cardgeneral' >
+            <Card border="none" style={{ width: '18rem' }} bsPrefix='cardgeneral' className="textcard" >
                 
                 <Card.Img variant="top" src={props.imagen} ></Card.Img>
                 <Card.Body className="cardbody">
-                    <Card.Title className="cardbody">{props.descripcion}</Card.Title>
+                    <Card.Title className="textcard">{props.descripcion}</Card.Title>
 
                     {/* BOTON MODAL */}
-                    <Button variant={theme.secondary} onClick={() => setShow(true)}>
+                    <Button className="textbuttoncard" variant={theme.secondary} onClick={() => setShow(true)}>
                         Detalles
                     </Button>
                     {/* MOOOOOODAAAL */}
                     <Modal show={show} onHide={() => setShow(false)} ClassName="modal-100w" id="modal_idFull" aria-labelledby="example-custom-modal-styling-title">
                         <Modal.Header  closeButton >
-                            <Modal.Title id="example-custom-modal-styling-title">
+                            <Modal.Title  id="example-custom-modal-styling-title" className="modaltitle">
                                 {props.descripcion}
                             </Modal.Title>
                         </Modal.Header>
                         <Modal.Body  className="d-flex justify-content-center flex-row">
-                            <Container > <Card.Img  variant="top" src={props.imagen} /> </Container>
+                            <Container > <Card.Img  variant="top" src={props.imagen}/> </Container>
                             <Container>
-                                <Card.Text className="d-flex justify-content-center">
-                                    {props.color}
+                                <Card.Text className="d-flex justify-content-center textcard">
+                                   Colores: {props.color}
                                 </Card.Text>
-                                <Card.Text className="d-flex justify-content-center">
-                                    {props.talla}
+                                <Card.Text className="d-flex justify-content-center textcard">
+                                Tallas: {props.talla}
                                 </Card.Text>
-                                <Card.Text className="d-flex justify-content-center">
-                                    {props.precio}
+                                <Card.Text className="d-flex justify-content-center textcard">
+                                Precio:  {props.precio}
                                 </Card.Text>
 
                             </Container>

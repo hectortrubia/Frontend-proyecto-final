@@ -33,6 +33,11 @@
 
     },
 
+    "tienda": {
+
+        "Detalles": "Details"
+
+    },
 
     "Login": {
 
@@ -53,6 +58,11 @@
         "Contraseña": "Password",
         "Enviar": "Send"
        
+    },
+
+    "Perfil": {
+        "Salir": "Logout",
+        "Eliminar": "Delete user"
     }
 
 }

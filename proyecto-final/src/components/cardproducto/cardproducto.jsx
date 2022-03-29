@@ -36,7 +36,7 @@ function CardProduct(props) {
 
                     {/* BOTON MODAL */}
                     <Button className="textbuttoncard" variant={theme.secondary} onClick={() => setShow(true)}>
-                        Detalles
+                    {t("tienda.Detalles")}
                     </Button>
                     {/* MOOOOOODAAAL */}
                     <Modal show={show} onHide={() => setShow(false)} ClassName="modal-100w" id="modal_idFull" aria-labelledby="example-custom-modal-styling-title">

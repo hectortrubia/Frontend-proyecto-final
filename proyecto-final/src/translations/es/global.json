@@ -10,16 +10,11 @@
         "Ingles": "Inglés",
         "Español": "Castellano"
     },
-
     "footer": {
-
         "Privacidad": "Política de privacidad",
         "Cookies": "Política de Cookies"
     },
-
-
     "home": {
-
         "Nosotros": "Sobre nosotros",
         "Nosotrossubtitulo": "Descubre nuestra historia",
         "Saber": "Saber más",
@@ -29,26 +24,27 @@
         "Registro": "Registro",
         "Comunidad": "Forma parte de nuestra comunidad",
         "Registrarme": "Resgistrarme"
-
     },
-
-
+    "tienda": {
+        "Detalles": "Detalles"
+    },
     "Login": {
         "Email": "Correo electrónico",
         "Contraseña": "Contraseña",
         "Entrar": "Entrar",
         "Salir": "Logout"
     },
-
-
-
     "Register": {
         "Club": "Nombre del Club",
         "Persona": "Persona de contacto",
         "Telefono": "Teléfono de contacto",
         "Usuario": "Usuario",
-        "Email": "Email",
+        "Email": "Correo electrónico",
         "Contraseña": "Contraseña",
         "Enviar": "Enviar"
-}
+    },
+    "Perfil": {
+        "Salir": "Salir",
+        "Eliminar": "Eliminar mi usuario"
+    }
 }

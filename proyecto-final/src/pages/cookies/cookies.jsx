@@ -22,7 +22,7 @@ function Cookies() {
   return (
     <React.Fragment>
 
-      <Row className='m-0 p-0' fluid>
+      <Row className='p-4' style={{marginBottom:"60px", marginTop:"0px"}} fluid>
 
 
         <Col className='m-0 p-0'

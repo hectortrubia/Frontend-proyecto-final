@@ -26,7 +26,7 @@ function Contacto() {
     return (
         <React.Fragment>
 
-            <Row className='m-0 p-0' fluid>
+            <Row style={{marginBottom:"60px", marginTop:"0px"}}  className='p-0' fluid>
 
                 <Col className='m-0 p-0'
                     sm={12}

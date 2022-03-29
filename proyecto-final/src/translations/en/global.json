@@ -13,6 +13,26 @@
         "Español": "Spanish"
     },
 
+    "footer": {
+
+        "Privacidad": "Privacy policy",
+        "Cookies": "Cookies policy"
+    },
+
+    "home": {
+        
+        "Nosotros": "About us",
+        "Nosotrossubtitulo": "Discover our history",
+        "Saber mas": "Learn more",
+        "Tienda": "Store",
+        "Novedades": "Discover the latest news",
+        "Entrar": "Enter",
+        "Registro": "Register",
+        "Comunidad": "Become part of our community",
+        "Registrarme": "Resgister"
+
+    },
+
 
     "Login": {
 

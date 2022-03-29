@@ -40,12 +40,12 @@ function Packs() {
     return (
 
         <div >
-            <div className="containerfilter" bg={theme.secondary}>
+            <div className="containerfilter" >
             <p className="containertext " >Encuentra tu producto</p>
-                <input className="inputfilter" onChange={Onfilter} type="text" ></input>
+                <input className="inputfilter"  onChange={Onfilter} type="text" ></input>
             </div>
 
-            <Container  >
+            <Container style={{marginBottom:"60px", marginTop:"0px"}}  >
                 <Row >
 
                     {pfilter === 0 ? <h1>cargando</h1> : pfilter.map((v, i) => {

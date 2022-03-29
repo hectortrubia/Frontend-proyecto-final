@@ -41,9 +41,9 @@ function Header() {
                             <Nav.Link className="m-3 " as={Link} to="users">{t("header.Login")}</Nav.Link>
                             <Nav.Link className="m-3 " as={Link} to="perfil">{t("header.Perfil")}</Nav.Link>
                     
-                                <Button onClick={() => i18n.changeLanguage("es")} className="ms-5 buttongener" >{t("header.Español")}</Button>
-                                <Button onClick={() => i18n.changeLanguage("en")} className="m-1 buttongener" >{t("header.Ingles")}</Button>
-                                <Button onClick={changeTheme} className="m-1 buttongener">{t("header.Tema")}</Button>
+                                <Button variant={theme.secondary} onClick={() => i18n.changeLanguage("es")}  className="ms-5 buttongener " >{t("header.Español")}</Button>
+                                <Button variant={theme.secondary} onClick={() => i18n.changeLanguage("en")} className="m-1 buttongener" >{t("header.Ingles")}</Button>
+                                <Button variant={theme.secondary} onClick={changeTheme} className="m-1 buttongener">{t("header.Tema")}</Button>
                                 {logName.usuario !== undefined ?  <p className="buttonuser ">{logName.usuario}</p> :''}
                         
 

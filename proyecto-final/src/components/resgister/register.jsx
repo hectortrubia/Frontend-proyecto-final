@@ -43,7 +43,7 @@ function Register() {
     return (
         <React.Fragment>
 
-            <div className="containerreg">
+            <div className="containerreg" style={{marginBottom:"60px", marginTop:"0px"}}>
                 <div className="titlereg" >Crear una cuenta</div>
                 <Form onSubmit={handleOnSubmit} className="containerformreg" >
 
@@ -78,7 +78,7 @@ function Register() {
                     </Form.Group>
 
 
-                    <Button className="botonreg" variant={theme.primary} type="submit">{t("Register.Enviar")}</Button>
+                    <Button variant={theme.secondary} className="botonreg" type="submit">{t("Register.Enviar")}</Button>
 
                 </Form>
                 </div>

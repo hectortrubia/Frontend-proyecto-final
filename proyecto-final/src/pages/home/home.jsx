@@ -24,7 +24,7 @@ function Home() {
 
     return (
 
-        <Container fluid className='m-0 p-0'>
+        <Container style={{marginBottom:"60px", marginTop:"0px"}} fluid className='p-0'>
 
             <Row className='m-0 p-0'>
                 <Col sm={12} md={12} lg={12} xl={12} xxl={12} className='m-0 p-0'>
@@ -41,7 +41,7 @@ function Home() {
                             <Card.Text className='subtitulosection'>
                                 Sobre nosotros
                             </Card.Text>
-                            <Link to="/nosotros"><Button className='botonsection' variant="primary" >Saber más</Button></Link>
+                            <Link to="/nosotros"><Button className='botonsection' variant={theme.secondary} >Saber más</Button></Link>
                         </div>
                 </Col>
 
@@ -54,7 +54,7 @@ function Home() {
                             <Card.Text className='subtitulosection'>
                                 Descubre las últimas novedades
                             </Card.Text>
-                            <Link to="/packs"><Button className='botonsection' variant="primary" >Entrar</Button></Link>
+                            <Link to="/packs"><Button className='botonsection' variant={theme.secondary} >Entrar</Button></Link>
                         </div>
                 </Col>
 
@@ -65,7 +65,7 @@ function Home() {
                             <Card.Text className='subtitulosection'>
                                 Forma parte de nuestra comunidad
                             </Card.Text>
-                            <Link to="/users"><Button className='botonsection' variant="primary" >Registrarme</Button></Link>
+                            <Link to="/users"><Button className='botonsection' variant={theme.secondary} >Registrarme</Button></Link>
                         </div>
                 </Col>
          

@@ -101,8 +101,8 @@ function Perfil() {
 
 
                 <div className="containerbutons">
-                    <Button className='botonperfil' variant={theme.primary} onClick={handleDelete}>Eliminar mi usuario</Button>
-                    <Button className='botonperfil' variant={theme.primary} onClick={handleLogout} type="submit">{t("Login.Salir")}</Button>
+                    <Button className='botonperfil' variant={theme.secondary} onClick={handleDelete}>Eliminar mi usuario</Button>
+                    <Button className='botonperfil' variant={theme.secondary} onClick={handleLogout} type="submit">{t("Login.Salir")}</Button>
                 </div>
 
             </div>

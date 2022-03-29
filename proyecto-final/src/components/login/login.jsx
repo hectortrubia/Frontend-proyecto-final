@@ -76,7 +76,7 @@ function Login() {
                     <Form.Control type="password" placeholder="Password" name="password" className="input" />
                 </Form.Group>
             
-                <Button type="submit" className="botonlogin">{t("Login.Entrar")}</Button>
+                <Button variant={theme.secondary} type="submit" className="botonlogin">{t("Login.Entrar")}</Button>
                
 
             </Form>

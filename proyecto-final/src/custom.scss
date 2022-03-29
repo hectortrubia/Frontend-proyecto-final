@@ -11,13 +11,22 @@
   "danger":     orange,
   "light":      pink,
   "dark":       black,
+  "primary": transparent,
 ) !default;
 
 
-// $btn-focus-width: "none"!default;
-// $btn-focus-box-shadow: "none"!default;
+$btn-focus-width: "none"!default;
+$btn-focus-box-shadow: "none"!default;
 
 
-
+$btn-link-hover-color: "none"!default;
+// $btn-hover-bg-shade-amount:       "none"!default;
+// $btn-hover-bg-tint-amount:        "none"!default;
+// $btn-hover-border-shade-amount:   "none"!default;
+// $btn-hover-border-tint-amount:    "none"!default;
+// $btn-active-bg-shade-amount:      "none"!default;
+// $btn-active-bg-tint-amount:       "none"!default;
+// $btn-active-border-shade-amount:  "none"!default;
+// $btn-active-border-tint-amount:   "none"!default;
 
 @import "~bootstrap/scss/bootstrap";

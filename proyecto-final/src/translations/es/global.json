@@ -10,12 +10,36 @@
         "Ingles": "Inglés",
         "Español": "Castellano"
     },
+
+    "footer": {
+
+        "Privacidad": "Política de privacidad",
+        "Cookies": "Política de Cookies"
+    },
+
+
+    "home": {
+
+        "Nosotros": "Sobre nosotros",
+        "Nosotrossubtitulo": "Descubre nnuestra historia",
+        "Saber mas": "Saber más",
+        "Tienda": "Descubre las últimas novedades",
+        "Entrar": "Entrar",
+        "Registro": "Registro",
+        "Comunidad": "Forma parte de nuestra comunidad",
+        "Registrarme": "Resgistrarme"
+
+    },
+
+
     "Login": {
         "Email": "Correo electrónico",
         "Contraseña": "Contraseña",
         "Entrar": "Entrar",
         "Salir": "Logout"
     },
+
+
 
     "Register": {
         "Club": "Nombre del Club",

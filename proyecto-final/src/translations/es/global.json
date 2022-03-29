@@ -21,9 +21,10 @@
     "home": {
 
         "Nosotros": "Sobre nosotros",
-        "Nosotrossubtitulo": "Descubre nnuestra historia",
-        "Saber mas": "Saber más",
-        "Tienda": "Descubre las últimas novedades",
+        "Nosotrossubtitulo": "Descubre nuestra historia",
+        "Saber": "Saber más",
+        "Tienda": "Tienda",
+        "Novedades": "Descubre las nuevas colecciones",
         "Entrar": "Entrar",
         "Registro": "Registro",
         "Comunidad": "Forma parte de nuestra comunidad",
@@ -47,7 +48,7 @@
         "Telefono": "Teléfono de contacto",
         "Usuario": "Usuario",
         "Email": "Email",
-        "Contraseña": "Password",
+        "Contraseña": "Contraseña",
         "Enviar": "Enviar"
 }
 }

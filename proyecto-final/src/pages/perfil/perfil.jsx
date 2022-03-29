@@ -53,6 +53,7 @@ function Perfil() {
             .then(data => {
                 console.log(data)
                 localStorage.removeItem('token')
+              
                 Navigate('/')
 
             })
@@ -61,6 +62,7 @@ function Perfil() {
 
     const handleLogout = () => {
         localStorage.removeItem('token')
+        setLogName('')
         Navigate('/')
 
     }

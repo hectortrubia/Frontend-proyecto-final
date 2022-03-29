@@ -14,6 +14,7 @@ import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import { useState } from 'react';
 
 
 
@@ -23,6 +24,8 @@ import Row from 'react-bootstrap/Row'
 
 function Header() {
     const [theme, updateTheme, changeTheme, logName, setLogName] = useContext(themeContext)
+const [token, setToken] = useState(localStorage.getItem("token"))
+console.log(logName)
 
     const [t, i18n] = useTranslation("global");
 
@@ -44,7 +47,7 @@ function Header() {
                                 <Button variant={theme.secondary} onClick={() => i18n.changeLanguage("es")}  className="ms-5 buttongener " >{t("header.Español")}</Button>
                                 <Button variant={theme.secondary} onClick={() => i18n.changeLanguage("en")} className="m-1 buttongener" >{t("header.Ingles")}</Button>
                                 <Button variant={theme.secondary} onClick={changeTheme} className="m-1 buttongener">{t("header.Tema")}</Button>
-                                {logName.usuario !== undefined ?  <p className="buttonuser ">{logName.usuario}</p> :''}
+                                {logName !== undefined ?  <p className="buttonuser ">{logName.usuario}</p> :''}
                         
 
                         </Nav>

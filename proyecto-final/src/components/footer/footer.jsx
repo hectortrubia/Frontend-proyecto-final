@@ -22,7 +22,7 @@ function Footer() {
 
                 <div className="containerfooter">
 
-                <Nav.Link style={{ height: "60px" }} as={Link} to="privacidad"> <p className="footer ">Política de privacidad</p> </Nav.Link>
+                <Nav.Link style={{ height: "60px" }} as={Link} to="privacidad"> <p className="footer ">{t("footer.Privacidad")}</p> </Nav.Link>
 
                     <div className="containerredes">
 
@@ -55,7 +55,7 @@ function Footer() {
 
 
               
-                    <Nav.Link style={{ height: "60px" }} as={Link} to="cookies"> <p className="footer ">Política de cookies</p> </Nav.Link>
+                    <Nav.Link style={{ height: "60px" }} as={Link} to="cookies"> <p className="footer ">{t("footer.Cookies")}</p> </Nav.Link>
                 </div>
 
             </Navbar>

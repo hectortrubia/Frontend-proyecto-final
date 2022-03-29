@@ -37,11 +37,11 @@ function Home() {
             <Col sm={12} md={4} lg={4} xl={4} xxl={4} className='m-0 p-0 sectioncontainer'>
                     <Image src={quienessomos} fluid />
                         <div className="textotienda">
-                            <Card.Title className='titulosection'>Sobre nosotros</Card.Title>
+                            <Card.Title className='titulosection'>{t("home.Nosotros")}</Card.Title>
                             <Card.Text className='subtitulosection'>
-                                Sobre nosotros
+                            {t("home.Nosotrossubtitulo")} 
                             </Card.Text>
-                            <Link to="/nosotros"><Button className='botonsection' variant={theme.secondary} >Saber más</Button></Link>
+                            <Link to="/nosotros"><Button className='botonsection' variant={theme.secondary} >{t("home.Saber")}</Button></Link>
                         </div>
                 </Col>
 
@@ -50,22 +50,22 @@ function Home() {
                 <Col sm={12} md={4} lg={4} xl={4} xxl={4} className='m-0 p-0 sectioncontainer'>
                     <Image src={tiendahome} fluid />
                         <div className="textotienda">
-                            <Card.Title className='titulosection'>Tienda</Card.Title>
+                            <Card.Title className='titulosection'>{t("home.Tienda")}</Card.Title>
                             <Card.Text className='subtitulosection'>
-                                Descubre las últimas novedades
+                            {t("home.Novedades")}
                             </Card.Text>
-                            <Link to="/packs"><Button className='botonsection' variant={theme.secondary} >Entrar</Button></Link>
+                            <Link to="/packs"><Button className='botonsection' variant={theme.secondary} >{t("home.Entrar")}</Button></Link>
                         </div>
                 </Col>
 
                 <Col sm={12} md={4} lg={4} xl={4} xxl={4} className='m-0 p-0 sectioncontainer'>
                     <Image src={comunidad} fluid />
                         <div className="textotienda">
-                            <Card.Title className='titulosection'>Registro</Card.Title>
+                            <Card.Title className='titulosection'>{t("home.Registro")}</Card.Title>
                             <Card.Text className='subtitulosection'>
-                                Forma parte de nuestra comunidad
+                            {t("home.Comunidad")}
                             </Card.Text>
-                            <Link to="/users"><Button className='botonsection' variant={theme.secondary} >Registrarme</Button></Link>
+                            <Link to="/users"><Button className='botonsection' variant={theme.secondary} >{t("home.Registrarme")}</Button></Link>
                         </div>
                 </Col>
          

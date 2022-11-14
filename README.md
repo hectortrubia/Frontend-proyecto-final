@@ -1,2 +1,5 @@
-# Frontend-proyecto-final
-Desarrollo del Frontend para el proyecto final
+# Frontend-proyecto-final de Bootcamp
+
+Desarrollo del Frontend CON React para el proyecto final.
+
+https://legeahector.netlify.app/
